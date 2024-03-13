@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{{> navbar}}
+<body>
+    <h1>Update Blog</h1>
+    <form action="/updateblog" method="post">
+        <label for="">type:</label>
+        <input type="text" name="name" id="name" value="{{updateblog.name}}"><br>
+
+        <label for="Class">color:</label>
+        <input type="text" name="Class" id="Class" value="{{updateblog.Class}}"><br>
+
+        <label for="blog">material:</label>
+        <input type="text" name="blog" id="blog" value="{{updateblog.blog}}"></input>
+        
+        <label for="blog">guitarBrand:</label>
+        <input type="text" name="brand" id="brand" value="{{updateblog.brand}}"></input>
+
+        <label for="blog">price:</label>
+        <input type="text" name="price" id="price" value="{{updateblog.price}}"></input>
+
+        <label for="blog">timestamp:</label>
+        <input type="text" name="stamp" id="stamp" value="{{updateblog.stamp}}"></input>
+       
+       <input type="hidden" name="blogId" value="{{updateblog.blogId}}">
+        <button>submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">AddBlog</a></li>
+            <li><a href="/getblog">GetBlog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h1>BlogPage</h1>
+    <form action="/addblog" method="post">
+        <label for="name">Type-</label>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="Class">Color-</label>
+        <input type="text" name="Class" id="Class"><br>
+
+        <label for="material">Material-</label>
+        <input type="text" name="material" id="material"><br>
+
+        <label for="brand">Guitar Brand-</label>
+        <input type="text" name="brand" id="brand"><br>
+
+        <label for="price">Price-</label>
+        <input type="text" name="price" id="price"><br>
+
+        <label for="stamp">Timestamp-</label>
+        <input type="text" name="stamp" id="stamp"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
